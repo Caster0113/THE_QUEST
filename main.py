@@ -46,6 +46,8 @@ while game_over:
 
     #-----CAPTURAR CONTROLES TECLADO-----
             
+           
+    """  
     estado_teclado = pg.key.get_pressed()#CAPTURAR KEY
     print("estado teclado: ",estado_teclado[pg.K_UP])
     
@@ -57,7 +59,7 @@ while game_over:
     if estado_teclado[pg.K_DOWN] == True:
         nave.pos_y += 1
 
-
+    """
 
 
     pantalla_principal.fill((255, 177, 0))#PONER COLOR PANTALLA FONDO
@@ -68,6 +70,7 @@ while game_over:
     meteorito2.dibujar(pantalla_principal)#PINTAR METEORITO2 EN LA PANTALLA
     meteorito3.dibujar(pantalla_principal)#PINTAR METEORITO3 EN LA PANTALLA
     
+    nave.mover()
 
     pg.display.flip()#ACTIVAR COLOR
 
